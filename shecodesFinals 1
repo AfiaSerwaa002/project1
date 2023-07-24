@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Burger</title>
+
+    <style>
+        h1 {
+            text-align: center;
+            color: black;
+        }
+
+        h3 {
+            text-align: center;
+            border: 1px solid #72678d;
+            padding: 20px;
+            font-size: 18px;
+            border-radius: 4px;
+            background: linear-gradient(109.6deg, rgb(0, 37, 84) 11.2%, rgba(0, 37, 84, 0.32) 100.2%);
+            color: black;
+
+        }
+
+        p {
+            text-align: center;
+            line-height: 1.5;
+            font-size: 13px;
+            margin: 20px 0 10px;
+            color: black;
+        } 
+
+        img {
+            display: block;
+            margin: 0 auto;
+           max-width: 100%;
+           border-radius: 10px;          
+}
+
+img{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    overflow-x: clip ;
+    overflow-y: clip;
+}
+
+.learn-extra {
+    display: block;
+    margin-top: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.learn-extra:hover {
+    text-decoration: underline;
+    
+}
+    
+.link {
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    background: linear-gradient(109.6deg, rgb(0, 37, 84) 11.2%, rgba(0, 37, 84, 0.32) 100.2%);
+    padding: 25px 20px;
+    border-radius: 10px;    
+    border: none; 
+    font-size: 18px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0,3);  
+    color: black;     
+    transition: all 200ms ease-in-out;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
+}
+
+button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.footer {
+    text-align: center;
+}
+
+box {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px 60px;
+}
+
+body {
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+    color: #fff;
+    width: 50%;
+    margin: 60px auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+    <h1>WELCOME TO BARCELOS!</h1>
+    <h3>Here's all about our beef burger</h3>
+    <hr>
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/090/944/original/beef.jpeg?1690114166" alt="beef burger">
+    <p>The beef burger is a culinary delight that tantalizes the taste buds with its rich and flavorful profile. Here's a description of its taste in 10 lines:
+  The first bite reveals a juicy and succulent patty, cooked to perfection, providing a burst of meaty goodness.
+  The beef imparts a robust and savory flavor, with hints of smokiness that enhance the overall experience.
+  The taste of the beef is deeply satisfying, with a perfect balance of umami and natural juices that coat the mouth.
+  As you continue to chew, the meat releases its hearty and meaty essence, leaving a gratifying sensation on the palate.
+  The patty's charred exterior adds a delightful touch of crispiness, providing a contrast to the tender meat within.
+  The seasoning and spices infused into the patty lend a harmonious blend of flavors, enhancing the overall taste.
+  The combination of beef and bun creates a harmonious balance of textures, with the softness of the bread complementing the meat's robustness.
+  The melted cheese, if present, adds a creamy and slightly tangy note, further elevating the burger's taste.
+  Toppings like lettuce, tomato, and pickles offer a refreshing and crunchy element, balancing the richness of the beef.
+  The overall experience is a symphony of flavors, where the umami, smokiness, juiciness, and seasonings intertwine, making each bite a delight for the senses.
+Enjoying a beef burger is like embarking on a gustatory journey that celebrates the classic combination of meat, bread, and condiments in a truly mouthwatering manner.</p>
+
+<hr>
+<div class="link">
+    <a href="https://www.barcelos.com.gh/" target="_blank" class="learn-extra">Come spy our beef burger here! </a>
+</div>
+
+<br><br>
+
+<button class="container">order a beef burger here</button>
+
+<p class="footer">
+    Opoku Priscilla built this.
+</p>
+</div>
+
+
+<script>
+    function beefBurger () {
+        let customerName = prompt("What is your name?");
+    alert("Welcome to Barcelos"+" " + customerName +"!");
+
+    let burgerType = prompt("What kind of beef burger would you like to order"+ " "+customerName + "?");
+    alert("Thanks for placing an order for "+ burgerType + " " + customerName +"." +" "+ "We will get back to you shortly!");
+    
+    }
+    let changeButton = document.querySelector("button");
+    changeButton.addEventListener("click",beefBurger)
+</script>
+</body>
+</html>
